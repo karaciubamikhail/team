@@ -1,0 +1,176 @@
+  body{
+    background-color: #F5F5F5;
+  }
+  .say_slider {
+    position: relative;
+    padding-left: 160px;
+    padding-bottom: 108px;
+    padding-top: 11px;
+  }
+  .say_slider-wrapper {
+    overflow: hidden;
+    padding-bottom: 50px;
+  }
+  .say_slider-items {
+    display: flex;
+    transition: transform 0.5s ease;
+    will-change: transform;
+    gap:30px;
+  }
+  .say_slider-transition-none {
+    transition: none;
+  }
+  .say_slider-item {
+    flex: 1 1 30%;
+    max-width: 28%;
+    background: #FFF;
+    box-shadow: 0px 16px 24px 0px rgba(118, 118, 178, 0.24);
+    max-height: 429px;
+  }
+  .say_slider-item:nth-child(2) {
+    flex: 1 1 30%;
+    max-width: 28%;
+    background: #FFF;
+    box-shadow: 0px 16px 24px 0px rgba(118, 118, 178, 0.24);
+    max-height: 375px;
+  }
+  .say_slider-item:nth-child(4) {
+    flex: 1 1 30%;
+    max-width: 28%;
+    background: #FFF;
+    box-shadow: 0px 16px 24px 0px rgba(118, 118, 178, 0.24);
+    max-height: 375px;
+  }
+  .slider_card{
+    padding: 44px 33px;
+  }
+  .slider_nav{
+    display: flex;
+    justify-content: right;
+    padding-right: 207px;
+    padding-top: 29px;
+  }
+  /* кнопки влево и вправо */
+  .say_slider-btn {
+    top: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    text-align: center;
+    background: transparent;
+    border: none;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  .say_slider-btn-hide {
+    display: none;
+  }
+  .say_slider-btn-prev {
+    margin-right:24px ;
+  }
+  .say_slider-btn-next {
+    right: 0;
+  } 
+  .say_slider-btn::before {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+  }
+  
+  .say_slider-btn-prev::before {
+    background-image: url("/svg/next.svg");
+  }
+  
+  .say_slider-btn-next::before {
+    background-image: url("/svg/down.svg");
+  }
+  @media (max-width:744px) and (min-width:568px){
+    .say_slider-item{
+      flex: 1 1 75%;
+      max-width: 75%;
+      background: #FFF;
+      box-shadow: 0px 16px 24px 0px rgba(118, 118, 178, 0.24);
+      max-height: 429px;
+    }
+    .say_slider-item:nth-child(2) {
+      flex: 1 1 75%;
+      max-width: 75%;
+      background: #FFF;
+      box-shadow: 0px 16px 24px 0px rgba(118, 118, 178, 0.24);
+      max-height: 375px;
+    }
+    .say_slider-item:nth-child(4) {
+      flex: 1 1 75%;
+      max-width: 75%;
+      background: #FFF;
+      box-shadow: 0px 16px 24px 0px rgba(118, 118, 178, 0.24);
+      max-height: 375px;
+    }
+    .say_slider{
+      padding-left: 59px;
+    }
+
+  }
+  @media (max-width:568px) and (min-width:320px){
+    .say_slider-item{
+      flex: 1 1 59%;
+      max-width: 50%;
+      background: #FFF;
+      box-shadow: 0px 16px 24px 0px rgba(118, 118, 178, 0.24);
+      max-height: 509px;
+    }
+    .say_slider-item:nth-child(even) {
+      flex: 1 1 59%;
+      max-width: 50%;
+      background: #FFF;
+      box-shadow: 0px 16px 24px 0px rgba(118, 118, 178, 0.24);
+      max-height: 432px;
+    }
+    .say_slider-item:nth-child(odd) {
+      flex: 1 1 59%;
+      max-width: 50%;
+      background: #FFF;
+      box-shadow: 0px 16px 24px 0px rgba(118, 118, 178, 0.24);
+      max-height: 509px;
+    }
+
+    .say_slider{
+      padding-left: 16px;
+    }
+
+  }
+  @media (max-width:320px) and (min-width:100px){
+    .say_slider-item{
+      flex: 1 0 86%;
+      max-width: 86%;
+      background: #FFF;
+      box-shadow: 0px 16px 24px 0px rgba(118, 118, 178, 0.24);
+      max-height: 509px;
+    }
+    .say_slider-item:nth-child(even) {
+      flex: 1 0 86%;
+      max-width: 86%;
+      background: #FFF;
+      box-shadow: 0px 16px 24px 0px rgba(118, 118, 178, 0.24);
+      max-height: 432px;
+    }
+    .say_slider-item:nth-child(odd) {
+      flex: 1 0 86%;
+      max-width: 86%;
+      background: #FFF;
+      box-shadow: 0px 16px 24px 0px rgba(118, 118, 178, 0.24);
+      max-height: 509px;
+    }
+
+    .say_slider{
+      padding-left: 16px;
+    }
+
+  }
+  
